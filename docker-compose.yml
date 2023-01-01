@@ -1,0 +1,10 @@
+services:
+  bs-dev:
+    image: bs-app
+    build: ./
+    ports:
+      - 80:3000
+    volumes:
+      - type: bind
+        source: .
+        target: /home/user
